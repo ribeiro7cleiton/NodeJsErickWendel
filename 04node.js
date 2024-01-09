@@ -5,7 +5,7 @@ async function main() {
         const result = await service.obterPessoas('a')
         const names = []
         console.time('for')
-        for (let i = 0; i <= result.results.length - 1; i++) {
+        for (let i = 0; i <= result.results - 1; i++) {
             const pessoa = result.results[i]
             names.push(pessoa.name)
         }
